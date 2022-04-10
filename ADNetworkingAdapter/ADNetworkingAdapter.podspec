@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name = 'ADNetworkingAdapter'
-s.version = '0.1.3'
+s.version = '0.1.4'
 s.platform = :ios, '9.0'
 s.summary = 'ADNetworkingAdapter used for mediation with the AnyThinkiOS'
 s.author = { 'Ben_tan' => '3539043734@qq.com' }
@@ -28,7 +28,7 @@ LICENSE
 }
 
 s.source = { :git => 'git@github.com:Ben21hao/SDKDev.git', :tag => s.version.to_s }
-s.vendored_frameworks = 'ADNetworkingAdapter/ADNetworkingAdapter/Classes/*.framework' 
+s.vendored_frameworks = 'ADNetworkingAdapter/Classes/*.framework' 
 
 # s.source =
 # {
