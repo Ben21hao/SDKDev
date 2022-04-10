@@ -27,7 +27,7 @@ The AnyThinkiOS SDK is available under a commercial license (https://www.applovi
 LICENSE
 }
 
-s.source = { :git => 'https://github.com/bo/ADNetworkingAdapter.git', :tag => s.version.to_s }
+s.source = { :git => 'git@github.com:Ben21hao/SDKDev.git', :tag => s.version.to_s }
 s.vendored_frameworks = 'ADNetworkingAdapter/ADNetworkingAdapter/Classes/*.framework' 
 
 # s.source =
