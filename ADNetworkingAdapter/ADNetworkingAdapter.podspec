@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name = 'ADNetworkingAdapter'
-s.version = '0.1.4'
+s.version = '0.1.5'
 s.platform = :ios, '9.0'
 s.summary = 'ADNetworkingAdapter used for mediation with the AnyThinkiOS'
 s.author = { 'Ben_tan' => '3539043734@qq.com' }
