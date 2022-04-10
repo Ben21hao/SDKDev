@@ -9,9 +9,10 @@
 Pod::Spec.new do |s|
 
 s.name = 'ADNetworkingAdapter'
-s.version = '0.1.0'
+s.version = '0.1.2'
 s.platform = :ios, '9.0'
-s.summary = 'AdColony adapter used for mediation with the AppLovin MAX SDK'
+s.summary = 'ADNetworkingAdapter used for mediation with the AnyThinkiOS'
+s.author = { 'Ben_tan' => '3539043734@qq.com' }
 
 s.homepage = "https://github.com/CocoaPods/Specs/search?o=desc&q=#{s.name}&s=indexed"
 s.license =
@@ -19,24 +20,26 @@ s.license =
   :type => 'Commercial License',
   :text => <<-LICENSE
 
-Copyright 2022 AppLovin Corp. All rights reserved.
+Copyright 2022 AnyThinkiOS Corp. All rights reserved.
 
-The SDK is available under a commercial license (https://www.applovin.com/eula).
+The AnyThinkiOS SDK is available under a commercial license (https://www.applovin.com/eula).
 
 LICENSE
 }
 
- #  s.source = { :git => 'https://github.com/bo/ADNetworkingAdapter.git', :tag => s.version.to_s }
-s.source =
-{
-    :http => "https://artifacts.applovin.com/ios/com/applovin/mediation/adcolony-adapter/#{s.name}-#{s.version}.zip",
-    :type => 'zip'
-}
+s.source = { :git => 'https://github.com/bo/ADNetworkingAdapter.git', :tag => s.version.to_s }
+s.vendored_frameworks = 'ADNetworkingAdapter/ADNetworkingAdapter/Classes/*.framework' 
 
-s.vendored_frameworks = "#{s.name}-#{s.version}/#{s.name}.framework"
+# s.source =
+# {
+#     :http => "https://artifacts.applovin.com/ios/com/applovin/mediation/adcolony-adapter/#{s.name}-#{s.version}.zip",
+#     :type => 'zip'
+# }
 
-s.dependency 'AdColony', '= 4.8.0'
-s.dependency 'AppLovinSDK'
+# s.vendored_frameworks = "#{s.name}-#{s.version}/#{s.name}.framework"
+
+s.dependency 'GDTMobSDK','4.13.50'
+s.dependency 'AnyThinkiOS','5.8.13'
 
 s.pod_target_xcconfig =
 {
