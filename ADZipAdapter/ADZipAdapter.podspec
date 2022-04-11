@@ -45,7 +45,7 @@ s.source =
     :http => "https://artifacts.applovin.com/ios/com/applovin/mediation/vungle-adapter/AppLovinMediationVungleAdapter-6.10.6.2.zip",
     :type => 'zip'
 }
-s.vendored_frameworks = "AppLovinMediationVungleAdapterA-6.10.6.2/AppLovinMediationVungleAdapter.framework"
+s.vendored_frameworks = "AppLovinMediationVungleAdapter-6.10.6.2/AppLovinMediationVungleAdapter.framework"
 # s.vendored_frameworks = "#{s.name}-#{s.version}/#{s.name}.framework"
 
 s.dependency 'VungleSDK-iOS'
