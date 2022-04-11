@@ -48,7 +48,7 @@ s.source =
 s.vendored_frameworks = "ppLovinMediationVungleAdapter-6.10.6.2/ppLovinMediationVungleAdapter.framework"
 # s.vendored_frameworks = "#{s.name}-#{s.version}/#{s.name}.framework"
 
-s.dependency 'VungleSDK-iOS', '= 6.10.6'
+s.dependency 'VungleSDK-iOS'
 s.dependency 'AppLovinSDK'
 
 s.pod_target_xcconfig =
